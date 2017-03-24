@@ -13,7 +13,7 @@ Configure the formatter
     editable: false,
     formatter: _.extend({}, Backgrid.CellFormatter.prototype, {
       fromRaw: function (rawValue) {
-        return '<pre>' + rawValue + '</pre>'
+        return '<pre>' + rawValue + '</pre>';
       }
     }),
     cell: 'html'
@@ -43,7 +43,7 @@ Configure the formatter
     editable: false,
     formatter: _.extend({}, Backgrid.CellFormatter.prototype, {
       fromRaw: function (rawValue, model) {
-        return _.template($('#my_template').html())(model)
+        return _.template($('#my_template').html())(model);
       }
     }),
     cell: 'html'
