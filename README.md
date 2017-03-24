@@ -16,7 +16,7 @@ Configure the formatter
         return '<pre>' + rawValue + '</pre>'
       }
     }),
-    cell: "html"
+    cell: 'html'
   },
   ...
 ]
@@ -46,7 +46,7 @@ Configure the formatter
         return _.template($('#my_template').html())({value: rawValue})
       }
     }),
-    cell: "html"
+    cell: 'html'
   },
   ...
 ]
