@@ -28,7 +28,7 @@ Create an underscore template for your cell
 
 ```html
 <script type="text/template" id="my_template">
-  <pre><%= model.get('attribute name') %></pre>
+  <pre><%= get('attribute name') %></pre>
 </script>
 
 ```
