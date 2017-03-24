@@ -28,7 +28,7 @@ Create an underscore template for your cell
 
 ```html
 <script type="text/template" id="my_template">
-  <pre><%= value %></pre>
+  <pre><%= model.get('attribute name') %></pre>
 </script>
 
 ```
@@ -42,8 +42,8 @@ Configure the formatter
     label: 'column header label',
     editable: false,
     formatter: _.extend({}, Backgrid.CellFormatter.prototype, {
-      fromRaw: function (rawValue) {
-        return _.template($('#my_template').html())({value: rawValue})
+      fromRaw: function (rawValue, model) {
+        return _.template($('#my_template').html())(model)
       }
     }),
     cell: 'html'
